@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./showroom.component.scss']
 })
 export class ShowroomComponent implements OnInit {
-
+  tooltipinfo:string = "a";
   constructor() { }
 
   ngOnInit() {

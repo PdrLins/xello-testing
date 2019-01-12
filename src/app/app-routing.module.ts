@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ShowroomComponent } from '../app/showroom/showroom.component';
-import { WellcomeComponent } from '../app/wellcome/wellcome.component';
+import { ShowroomComponent } from './components/showroom/showroom.component';
+import { WellcomeComponent } from './components/wellcome/wellcome.component';
 
 const routes: Routes = [
   { path: 'showroom', component: ShowroomComponent },

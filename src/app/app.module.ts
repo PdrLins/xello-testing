@@ -4,8 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ShowroomComponent } from './showroom/showroom.component';
-import { WellcomeComponent } from './wellcome/wellcome.component';
+import { ShowroomComponent } from './components/showroom/showroom.component';
+import { WellcomeComponent } from './components/wellcome/wellcome.component';
+import { TooltipDirective } from './directives/tooltip.directive';
+import { TooltipComponent } from './directives/tooltip/tooltip.component';
 
 // import { NgbTooltip } from '@ng-bootstrap/ng-bootstrap/tooltip/tooltip';
 
@@ -13,8 +15,9 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
   declarations: [
     AppComponent,
     ShowroomComponent,
-    WellcomeComponent
-    // NgbTooltip
+    WellcomeComponent,
+    TooltipDirective,
+    TooltipComponent
   ],
   imports: [
     BrowserModule,
