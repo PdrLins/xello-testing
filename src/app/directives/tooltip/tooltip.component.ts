@@ -1,19 +1,25 @@
-import { Component, AfterViewInit, Input } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit  } from '@angular/core';
 
 @Component({
   selector: 'custom-tooltip',
   templateUrl: './tooltip.component.html',
   styleUrls: ['./tooltip.component.scss']
 })
-export class TooltipComponent implements AfterViewInit {
-  @Input() title: string;
-  @Input() ref: any;
+export class TooltipComponent implements OnInit, AfterViewInit {
+  @Input()
+  tooltipInfo:string;
+  hidden:boolean = true;
+  top: string;
 
-  ngAfterViewInit(): void {
-    // console.log('afterviewinit');
+  constructor() {
+    // const { top } = this.config.host.getBoundingClientRect();
+    // const { height } = this.tooltipDirective.nativeElement.getBoundingClientRect();
+    // this.top = `${top - height}px`;
+   }
+   ngAfterViewInit(): void {
   }
-
-
-  constructor() { }
-
+ 
+  ngOnInit(): void {
+  }
+ 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'showroom',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./showroom.component.scss']
 })
 export class ShowroomComponent implements OnInit {
-  tooltipinfo:string = "a";
+  tooltipActioOne:string = "Action one!";
+  tooltipActioTwo:string ="Action two!";
   constructor() { }
-
   ngOnInit() {
+  
   }
+ 
 
 }
