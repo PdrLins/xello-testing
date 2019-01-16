@@ -6,12 +6,10 @@
   </p>
   <p class="lead">You can <a routerLink="" class="alert-link">back!</a>, as well.</p>
 </div>
-
 <p>
-    <button custom-tooltip type="button" class="btn btn-success btn-lg mr-sm-2">Action
-      one!
-    </button>
-  <button custom-tooltip type="button" class="btn btn-success btn-lg mr-sm-2">Action
-    two!</button>
-
+  <button custom-tooltip [tooltipInfo]="tooltipActioA" type="button" class="btn btn-success btn-lg mr-sm-2">Action
+    A!
+  </button>
+  <button custom-tooltip [tooltipInfo]="tooltipActioB" type="button" class="btn btn-success btn-lg mr-sm-2">Action
+    B!</button>
 </p>

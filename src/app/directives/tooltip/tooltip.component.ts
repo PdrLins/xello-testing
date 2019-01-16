@@ -1,11 +1,11 @@
-import { Component, OnInit, Input, AfterViewInit  } from '@angular/core';
+import { Component, Input  } from '@angular/core';
 
 @Component({
   selector: 'custom-tooltip',
   templateUrl: './tooltip.component.html',
   styleUrls: ['./tooltip.component.scss']
 })
-export class TooltipComponent implements OnInit, AfterViewInit {
+export class TooltipComponent {
   @Input()
   tooltipInfo:string;
   hidden:boolean = true;
@@ -16,10 +16,4 @@ export class TooltipComponent implements OnInit, AfterViewInit {
     // const { height } = this.tooltipDirective.nativeElement.getBoundingClientRect();
     // this.top = `${top - height}px`;
    }
-   ngAfterViewInit(): void {
-  }
- 
-  ngOnInit(): void {
-  }
- 
 }
